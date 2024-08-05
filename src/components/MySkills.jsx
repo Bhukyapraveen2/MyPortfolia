@@ -9,6 +9,7 @@ import nextjs from '../assets/nextjs.webp'
 import nodejs from '../assets/nodejs.png'
 import reactjs from '../assets/reactjs.png'
 import reactnative from '../assets/reactnative.jpg'
+import Aws from '../assets/aws_logo.png'
 import ProgressBar from './ProgressBar'
 // import bootstrap from '../assets/bootstrap.png'
 
@@ -18,7 +19,9 @@ const MySkills = () => {
 
     <div className="container mt-4" id='skills'>
       <div className='d-flex justify-content-center'>
-        <h2 className='border-botom text-violet pb-1' style={{ width: 'fit-content', fontWeight:'bolder' }}>Profesional Skills</h2>
+      <h2 className='border-bottom pb-1 mb-5  text-violet work-title' style={{ width: 'fit-content', margin: '0 auto', fontWeight: 'bold' }}>
+                    Professional Skills
+                </h2>
       </div>
       {/* <h3 style={{ fontWeight: '700' }}>Profesional Skills</h3>
         <span className='my2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</span> */}
@@ -28,7 +31,7 @@ const MySkills = () => {
             <ProgressBar skill={'HTML5'} percentage={95} color='red' img={html} />
           </div>
           <div data-aos-delay="5000" data-aos="fade-right">
-            <ProgressBar skill={'CSS5'} percentage={80} color={'green'} img={CSS} />
+            <ProgressBar skill={'CSS5'} percentage={85} color={'green'} img={CSS} />
 
           </div>
           <div data-aos-delay="5000" data-aos="fade-right">
@@ -41,6 +44,10 @@ const MySkills = () => {
           </div>
           <div data-aos-delay="5000" data-aos="fade-right">
             <ProgressBar skill={'Java Script'} percentage={85} color={'#0dcaf0'} img={js} width={35} />
+
+          </div>
+          <div data-aos-delay="5000" data-aos="fade-right">
+            <ProgressBar skill={'AWS'} percentage={80} color={'#0dcaf0'} img={Aws} width={35} />
 
           </div>
 
@@ -56,7 +63,7 @@ const MySkills = () => {
 
           </div>
           <div data-aos-delay="5000" data-aos="fade-left">
-            <ProgressBar skill={'Node JS'} percentage={65} color={'#20c997'} img={nodejs} width={44} />
+            <ProgressBar skill={'Node JS'} percentage={85} color={'#20c997'} img={nodejs} width={44} />
 
           </div>
           <div data-aos-delay="5000" data-aos="fade-left">
@@ -64,7 +71,12 @@ const MySkills = () => {
 
           </div>
           <div data-aos-delay="5000" data-aos="fade-left">
-            <ProgressBar skill={'Mongo DB'} percentage={50} color={'red'} img={mongodb} width={33} />
+            <ProgressBar skill={'Mongo DB'} percentage={90} color={'red'} img={mongodb} width={33} />
+
+          </div>
+
+          <div data-aos-delay="5000" data-aos="fade-left">
+            <ProgressBar skill={'SQL'} percentage={90} color={'red'} img={Aws} width={33} />
 
           </div>
 

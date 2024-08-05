@@ -18,7 +18,7 @@ code {
 }
 
 .bg-violet{
-  background-color: #9743e4;
+  background-color: #a5a3a6;
 }
 .text-violet{
   color: #9743e4;
@@ -77,18 +77,44 @@ code {
   color: #9743e4;
   font-weight: 700;
 }
-.banner-image-div{
-  border: 6px solid #9743e4;;
+.banner-image-div {
+  border: 6px solid #de7de8;
   border-radius: 200px;
   overflow: overlay;
-  /* box-shadow: 5px 5px #9743e4;; */
-
-  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
-
-  /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
-
-  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 
+              25px 0 20px -20px rgba(0, 0, 0, 0.45), 
+              0px 25px 20px -20px rgba(0, 0, 0, 0.45), 
+              -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+  transition: all 0.3s ease;
 }
+
+.banner-image-div:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: 1;
+  box-shadow: 0px -25px 20px -20px rgba(222, 125, 232, 0.75), 
+              25px 0 20px -20px rgba(222, 125, 232, 0.75), 
+              0px 25px 20px -20px rgba(222, 125, 232, 0.75), 
+              -25px 0 20px -20px rgba(222, 125, 232, 0.75);
+  background-color: rgba(222, 125, 232, 0.1);
+  transform: scale(1.1); /* Increase size on hover */
+  width: 400px;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
 .fixedElement {
   position:sticky;
   top:0;

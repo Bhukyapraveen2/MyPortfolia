@@ -1,0 +1,100 @@
+/* Navbar Container with Gradient Background */
+.navbar {
+    background: linear-gradient(90deg, #6a0dad, #ffcc00);/* Gradient background */
+    padding: 0.5rem 1rem; /* Padding for spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    z-index: 1000; /* Ensure the navbar is above other elements */
+    height: 13vh;
+}
+
+/* Navbar Brand */
+.cnav-brand {
+    font-size: 1.5rem;
+    color: #ffffff; /* Brand text color */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.cnav-brand:hover {
+    color: #ffcc00; /* Brand color on hover */
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+    border: none;
+    color: #ffffff;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,..."); /* Replace with your icon data */
+}
+
+/* Navbar Links */
+.navbar-nav {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure items stay on one line */
+    justify-content: flex-end; /* Right-align items */
+    width: 100%; /* Full width */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    list-style: none;
+    margin-left: 1rem; /* Spacing between items */
+}
+
+.nav-link {
+    color: #ffffff; /* Default link color */
+    margin: 0;
+    padding: 0.5rem 0.75rem; /* Padding for clickable area */
+    position: relative;
+    transition: color 0.3s, transform 0.3s, background-color 0.3s; /* Smooth transitions */
+    text-decoration: none; /* Remove underline */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Hover Effect for Links */
+.nav-link:hover {
+    color: #ffcc00; /* Change color on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Light background color on hover */
+    transform: scale(1.05); /* Slightly enlarge the text */
+}
+
+/* Active Link Style */
+.nav-link.active {
+    color: #ffcc00; /* Active link color */
+}
+
+/* Underline for Active Link */
+.navtext-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #ffcc00; /* Underline color */
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.nav-link:not(.active)::after {
+    width: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .nav-item {
+        margin: 0.5rem 0; /* Margin for vertical spacing */
+    }
+}

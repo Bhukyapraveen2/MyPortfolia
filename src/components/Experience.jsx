@@ -6,7 +6,9 @@ const Experience = () => {
     return (
         <div className="container mt-4" id='experience'>
             <div className='d-flex justify-content-center'>
-                <h2 className='border-botom text-violet pb-1' style={{ width: 'fit-content', fontWeight: 'bolder' }}>Experience</h2>
+            <h2 className='border-bottom pb-1 mb-5  text-violet work-title' style={{ width: 'fit-content', margin: '0 auto', fontWeight: 'bold' }}>
+                    Experience
+                </h2>
             </div>
             <section>
                 <div className="container py-5" style={{ backgroundColor: '#f8f7ff' }}>
@@ -20,9 +22,9 @@ const Experience = () => {
                                     </div> */}
 
                                     <div>
-                                        <span className='fs-5' style={{ fontWeight: 'bold' }}>OSI Digital</span>, <span>Hyderabad</span>
+                                        <span className='fs-5' style={{ fontWeight: 'bold' }}>BOSCH</span>, <span>Hyderabad</span>
                                     </div>
-                                    <h5 className='mt-2'>2023 - Current</h5>
+                                    <h5 className='mt-2'>2022 - Current</h5>
                                     <h6><strong>Software Engineer</strong></h6>
 
                                 </div>
@@ -32,7 +34,7 @@ const Experience = () => {
                             <div className="card text-white" style={{ backgroundColor: '#03AED2' }}>
                                 <div className="card-body p-4">
                                     <div>
-                                        <span className='fs-5' style={{ fontWeight: 'bold' }}>Omni Works Private Limited</span>, <span>Hyderabad</span>
+                                        <span className='fs-5' style={{ fontWeight: 'bold' }}>xyz</span>, <span>Hyderabad</span>
                                     </div>
                                     <h5 className='mt-2'>2021 - 2022</h5>
                                     <h6><strong>MERN Stack Developer</strong></h6>
@@ -55,7 +57,7 @@ const Experience = () => {
                             <div className="card text-white" style={{ backgroundColor: '#EF5A6F' }}>
                                 <div className="card-body p-4">
                                     <div>
-                                        <span className='fs-5' style={{ fontWeight: 'bold' }}>Acutesoft Solutions</span>, <span>Hyderabad</span>
+                                        <span className='fs-5' style={{ fontWeight: 'bold' }}>xyz</span>, <span>Hyderabad</span>
                                     </div>
                                     <h5 className='mt-2'>2018 - 2020</h5>
                                     <h6><strong>UI Developer</strong></h6>
